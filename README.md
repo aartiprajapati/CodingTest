@@ -1,6 +1,8 @@
-# Myapp
+# myapp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
+Create a new angular project using command ng new myapp
+Pull the remaining changes from github
 
 # Bootstrap 5.3.2 and rxjs
 
