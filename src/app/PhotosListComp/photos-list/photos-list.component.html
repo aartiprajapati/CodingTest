@@ -1,0 +1,21 @@
+<div>
+  <h3 class="pageTitle"> Photos </h3>
+</div>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Album Id</th>
+        <th scope="col">Title</th>
+        <th scope="col">Thumbnail Url</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let photo of photos">
+        <th scope="row">{{photo.id}}</th>
+        <td>{{photo.albumId}}</td>
+        <td>{{photo.title}}</td>
+        <td><img class="thumbNail" [src]="photo.thumbnailUrl"  (click)="onThumbnailClick(photo.url)"></td>
+      </tr>
+    </tbody>
+  </table>
